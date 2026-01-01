@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm - Smart Digital Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Smart Digital Clock</h1>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="clock.html" class="nav-link">Clock</a></li>
+                    <li><a href="alarm.html" class="nav-link active">Alarm</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="contact.html" class="contact-link-header">Contact</a>
+                <div class="dark-mode-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="dark-mode-label">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Alarm Page Content -->
+        <section class="alarm-page">
+            <div class="container">
+                <div class="alarm-container">
+                    <div class="alarm-form">
+                        <h2>Set New Alarm</h2>
+                        <form id="alarmForm">
+                            <div class="form-group">
+                                <label for="hour">Hour:</label>
+                                <select id="hour" name="hour">
+                                    <option value="">Select Hour</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="minute">Minute:</label>
+                                <select id="minute" name="minute">
+                                    <option value="">Select Minute</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ampm">AM/PM:</label>
+                                <select id="ampm" name="ampm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn-primary">Set Alarm</button>
+                                <button type="button" class="btn btn-danger" onclick="clearAllAlarms()">Clear All</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="alarms-list">
+                        <h3>Active Alarms</h3>
+                        <div id="alarmsList">
+                            <p>No alarms set</p>
+                        </div>
+                        <div class="button-group" style="margin-top: 1rem;">
+                            <button type="button" class="btn btn-secondary" onclick="snoozeAlarm()">Snooze (5 min)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Smart Digital Clock</h3>
+                    <p>Final Year CSE Project</p>
+                </div>
+                <div class="social-links">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Adithyakp86" class="social-icon">GitHub</a>
+                        <a href="https://www.linkedin.com/in/adithyakp86/" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Smart Digital Clock. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

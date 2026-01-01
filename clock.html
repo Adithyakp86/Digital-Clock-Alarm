@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock - Smart Digital Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Smart Digital Clock</h1>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="clock.html" class="nav-link active">Clock</a></li>
+                    <li><a href="alarm.html" class="nav-link">Alarm</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="contact.html" class="contact-link-header">Contact</a>
+                <div class="dark-mode-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="dark-mode-label">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Clock Page Content -->
+        <section class="clock-page">
+            <div class="container">
+                <div class="clock-container">
+                    <div class="clock-display-large" id="digital-clock">00:00:00</div>
+                    <div class="date-display-large" id="date-display">Monday, Jan 1, 2026</div>
+                    
+                    <div class="format-toggle">
+                        <label>
+                            <input type="checkbox" id="formatToggle"> 24-Hour Format
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Smart Digital Clock</h3>
+                    <p>Final Year CSE Project</p>
+                </div>
+                <div class="social-links">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Adithyakp86" class="social-icon">GitHub</a>
+                        <a href="https://www.linkedin.com/in/adithyakp86/" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Smart Digital Clock. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
